@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands Cheatsheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <header>
+    <h1>Git Commands Reference 🚀</h1>
+    <p>راهنمای سریع دستورات پرکاربرد گیت</p>
+</header>
+
+<main>
+    <div class="commands-list">
+        <h2>دستورات گیت</h2>
+        <ul id="commandList">
+            <li data-command="git init" data-description="این دستور یک مخزن جدید (repository) در دایرکتوری فعلی ایجاد می‌کند و برای شروع کار با گیت در یک پروژه جدید استفاده می‌شود.">
+                <code>git init</code>
+            </li>
+            <li data-command="git clone" data-description="یک کپی از یک مخزن گیت موجود در یک آدرس راه‌دور (<url>) را روی سیستم محلی شما دانلود می‌کند.">
+                <code>git clone &lt;url&gt;</code>
+            </li>
+            <li data-command="git status" data-description="وضعیت فایل‌ها را در دایرکتوری کاری و ناحیه مرحله‌بندی (Staging Area) نشان می‌دهد؛ مثلاً کدام فایل‌ها تغییر کرده‌اند و کدام‌ها آماده Commit هستند.">
+                <code>git status</code>
+            </li>
+            <li data-command="git add" data-description="فایل‌های تغییریافته را به ناحیه مرحله‌بندی (Staging Area) اضافه می‌کند تا برای Commit آماده شوند. `git add .` همه فایل‌ها را اضافه می‌کند.">
+                <code>git add &lt;file&gt; / .</code>
+            </li>
+            <li data-command="git commit" data-description="تغییرات مرحله‌بندی‌شده را به صورت دائم در تاریخچه مخزن ثبت می‌کند. پرچم `-m` برای افزودن پیام Commit استفاده می‌شود.">
+                <code>git commit -m "پیام"</code>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="command-details">
+        <h2 id="detailTitle">جزئیات دستور</h2>
+        <div id="detailContent">
+            <p class="placeholder">لطفاً برای مشاهده جزئیات، روی یک دستور از لیست کلیک کنید.</p>
+            </div>
+    </div>
+</main>
+  
+    <script src="./script.js"></script>
+</body>
+</html>

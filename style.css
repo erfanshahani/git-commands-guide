@@ -1,0 +1,112 @@
+:root {
+  --bg-color: #282c34; /* پس‌زمینه اصلی */
+  --card-bg: #3c414c; /* پس‌زمینه کارت‌ها */
+  --text-color: #abb2bf; /* رنگ متن اصلی */
+  --highlight-color: #61afef; /* رنگ برجسته آبی */
+  --success-color: #98c379; /* رنگ موفقیت سبز */
+  --code-bg: #21252b; /* پس‌زمینه کد */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  direction: rtl;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--card-bg);
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--highlight-color);
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.commands-list {
+  flex: 1;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.command-details {
+  flex: 2;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: var(--success-color);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--code-bg);
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: var(--code-bg);
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  font-size: 1.1em;
+}
+
+li:hover {
+  background-color: #3e4451;
+  transform: translateX(-5px);
+}
+
+li.active {
+  border-right: 4px solid var(--highlight-color);
+  background-color: #3e4451;
+  font-weight: bold;
+}
+
+code {
+  color: var(--highlight-color);
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+#detailContent {
+  min-height: 100px; /* برای جلوگیری از تغییر ارتفاع */
+  padding: 10px;
+  border: 1px dashed var(--highlight-color);
+  border-radius: 5px;
+}
+
+.placeholder {
+  color: #6c7280;
+  font-style: italic;
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+}
